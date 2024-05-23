@@ -18,4 +18,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a research associate at NYU Grossman School of Medicine Department of Radiology, working on cardiac MRI research. I recently graduated from NYU Courant with an MS in computer science in 2024. I am interested in generative models, optimal transport, differential geometry, and AI for Science. In a previous life, I worked as a reporter at a business magazine in NY, covering macroeconomics, tech companies, and US-Asia. I also studied international relations and economics at Johns Hopkins University.h
+I am a research associate at NYU Grossman School of Medicine Department of Radiology, working on cardiac MRI research. I recently graduated from NYU Courant with an MS in computer science in 2024. I am interested in generative models, optimal transport, differential geometry, and AI for Science. In a previous life, I worked as a reporter at a business magazine in NY, covering macroeconomics, tech companies, and US-Asia. I also studied international relations and economics at Johns Hopkins University.
