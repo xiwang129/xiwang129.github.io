@@ -17,4 +17,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am an MS in computer science student at NYU Courant and a research associate at NYU Grossman School of Medicine Department of Radiology, working on cardiac MRI research. I am interested in generative models, optimal transport, differential geometry, and AI for Science. In a previous life, I worked as a reporter at a business magazine in NY, covering macroeconomics, tech companies, and US-Asia. I also studied international relations and economics at Johns Hopkins University.
+I am an MS in computer science student at NYU Courant and a research associate at NYU Grossman School of Medicine. I am broadly interested in AI for Science, particularly in generative models for scientific discovery, optimal transport, differential geometry, and physics-informed machine learning. In a previous life, I worked as a reporter at a business magazine in NY, covering macroeconomics, tech companies, and US-Asia. I also studied international relations and economics at Johns Hopkins University.
