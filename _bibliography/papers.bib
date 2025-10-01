@@ -1,10 +1,39 @@
 ---
 ---
+
+@article{pde,
+  abbr={NeurIPS workshop},
+  title={Learning Velocity Prior-Guided Hamiltonian-Jacobi Flows with Unbalanced Optimal Transport},
+  author={Wang, Amy Xiang},
+  journal={<em>Under review</em><br>
+  short version: NeurIPS workshop on Frontiers in Probabilistic Inference: Learning meets Sampling<br>
+  Dynamics at the Frontiers of Optimization, Sampling, and Games
+  },
+  abstract={The connection between optimal transport (OT) and control theory is well established, most prominently in the Benamou–Brenier dynamic formulation. With quadratic cost, the OT problem can be reframed as a stochastic control problem in which a density evolves under a controlled velocity field subject to the continuity equation. In this work, we introduce a velocity prior into the continuity equation and derive a new Hamilton–Jacobi–Bellman (HJB) formulation to learn dynamical probability flows. We further extend the approach to the unbalanced setting by adding a growth term, capturing mass variation processes common in scientific domains such as cell proliferation and differentiation. Importantly, our method requires training only a single neural network to model, without the need for a separate model for the growth term. Finally, by decomposing the velocity field as, our approach is able to capture complex transport patterns that prior methods struggle to learn due to the curl-free limitation.},
+  year={2025},
+  pdf={VP_HJF_ICLR_2026.pdf},
+  selected={true}
+}
   
+
+@article{pde,
+  abbr={SCML},
+  title={Generalized Lie Symmetries in Physics-informed Neural Operator},
+  author={Wang*, Amy Xiang and Shumaylov*, Zakhar and Zaika, Peter and Sherry, Ferdia and Sch\"onlieb, Carola-Bibiane},
+  journal={Scientific Computing and Machine Learning(SCML),<span style="color: red;"> Oral</span><br>
+          COLT Workshop on the Theory of AI for Scientific Computing (TASC)<span style="color: red;"> Best Paper Runner-up Award, Oral</span>},
+  abstract={Physics-informed neural operators (PINOs) have emerged as powerful tools for learning solution operators of partial differential equations (PDEs). Recent research has demonstrated that incorporating Lie point symmetry information can significantly enhance the training efficiency of PINOs, primarily through techniques like data, architecture, and loss augmentation. In this work we focus on the latter, highlighting that point symmetries oftentimes result in no training signal, limiting their effectiveness in many problems. To address this, we propose a novel loss augmentation strategy that leverages evolutionary representatives of point symmetries, a specific class of generalized symmetries of the underlying PDE. These generalized symmetries provide a richer set of constraints than standard symmetries, leading to a more informative training signal. We demonstrate that this approach significantly enhances performance of neural operators across a variety of PDEs, achieving improved data efficiency.},
+  year={2025},
+  pdf={https://arxiv.org/pdf/2502.00373},
+  code={https://github.com/xiwang129/GPS_PINO},
+  selected={true}
+}
+
 @inproceedings{
   wang2024on,
   abbr={ICML workshop},
   title={On Conditional Sampling with Joint Flow Matching},
+  abstract={A transport map is versatile and useful for many downstream tasks, from training generative modeling to solving Bayesian inference problems. Marzouk 2016 pioneered the <em>measure transport</em> approach for sampling by introducing its connection with transport map, where samples from can be easily drawn. When the transport map is a lower-triangular map or <em>Knothe-Rosenblatt map</em>, we can also draw conditional samples from the target distribution generalized by Kovachki 2020. This state-of-the-art sampling approach deviates from traditional methods such as MCMC or variational inference and has received many research interests in recent years. In our work, we introduce a new approach to approximate this transport map to perform conditional sampling tasks using a recent computational advance in generative modeling -- flow matching. Specifically, we use Pooladian 2023's joint flow matching approach with a twisted Euclidean cost to ensure the triangular property of the map. We empirically verify our method through benchmark examples and quantifying the approximated map errors.},
   author={Amy Xiang Wang},
   booktitle={ICML 2024 Workshop on Structured Probabilistic Inference {\&} Generative Modeling},
   year={2024},
@@ -13,17 +42,6 @@
   selected={true}
 }
 
-@article{pde,
-  abbr={SCML},
-  title={Generalized Lie Symmetries in Physics-informed Neural Operator},
-  author={Wang*, Amy Xiang and Shumaylov*, Zakhar and Zaika, Peter and Sherry, Ferdia and Sch\"onlieb, Carola-Bibiane},
-  journal={Scientific Computing and Machine Learning,},
-  abstract={Physics-informed neural operators (PINOs) have emerged as powerful tools for learning solution operators of partial differential equations (PDEs). Recent research has demonstrated that incorporating Lie point symmetry information can significantly enhance the training efficiency of PINOs, primarily through techniques like data, architecture, and loss augmentation. In this work we focus on the latter, highlighting that point symmetries oftentimes result in no training signal, limiting their effectiveness in many problems. To address this, we propose a novel loss augmentation strategy that leverages evolutionary representatives of point symmetries, a specific class of generalized symmetries of the underlying PDE. These generalized symmetries provide a richer set of constraints than standard symmetries, leading to a more informative training signal. We demonstrate that this approach significantly enhances performance of neural operators across a variety of PDEs, achieving improved data efficiency.},
-  year={2025},
-  additional_info={<span style="color: red;"> Oral Presentation</span>},
-  pdf={https://arxiv.org/pdf/2502.00373},
-  code={https://github.com/xiwang129/GPS_PINO},
-  selected={true}
-}
+
 
 
