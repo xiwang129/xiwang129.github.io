@@ -1,17 +1,26 @@
 ---
 ---
+@article{pde,
+  abbr={},
+  title={MC-MF: Multimodal Conditional MeanFlow with Distribution Alignment},
+  author={Wang, Amy Xiang},
+  journal={Under review},
+  abstract={Conditional MeanFlow enables efficient one-step generation by learning an average velocity field. However, its regression objective does not explicitly measure the discrepancy between the conditional distribution induced by the one-step map and the target distribution. This limitation can be particularly important in multimodal conditional settings, where it may recover plausible modal regions, yet the probability mass is incorrectly allocated across modes. To address this limitation, we introduce MC-MF: Multimodal Conditional MeanFlow, which augments the standard MeanFlow objective with a condition-aware maximum mean discrepancy (MMD) regularizer between generated and target conditional distributions. This sample-based regularizer requires no knowledge of mode identities, the number of modes, or target mixture proportions, while preserving single function evaluation inference. Our theoretical analysis shows that the proposed MMD decomposes into distribution discrepancies within each condition, and captures discrepancies arising from incorrect probability allocation across modes. We also experimented on a controlled conditional Gaussian mixture and an asymmetric event-conditioned Lorenz system, showing that MC-MF can substantially improve multimodal probability allocation over one-step MeanFlow.},
+  year={2026},
+  pdf={MC-MF_workshop.pdf},
+  selected={true}
+}
 
 @article{pde,
   abbr={NeurIPS workshop},
   title={Learning Velocity Prior-Guided Hamiltonian-Jacobi Flows with Unbalanced Optimal Transport},
   author={Wang, Amy Xiang},
-  journal={<em>Under review</em><br>
-  short version: NeurIPS workshop on Frontiers in Probabilistic Inference: Learning meets Sampling<br>
+  journal={<br> NeurIPS workshop on Frontiers in Probabilistic Inference: Learning meets Sampling<br>
   Dynamics at the Frontiers of Optimization, Sampling, and Games
   },
-  abstract={The connection between optimal transport (OT) and control theory is well established, most prominently in the Benamou–Brenier dynamic formulation. With quadratic cost, the OT problem can be reframed as a stochastic control problem in which a density evolves under a controlled velocity field subject to the continuity equation. In this work, we introduce a velocity prior into the continuity equation and derive a new Hamilton–Jacobi–Bellman (HJB) formulation to learn dynamical probability flows. We further extend the approach to the unbalanced setting by adding a growth term, capturing mass variation processes common in scientific domains such as cell proliferation and differentiation. Importantly, our method requires training only a single neural network to model, without the need for a separate model for the growth term. Finally, by decomposing the velocity field, our approach is able to capture complex transport patterns that prior methods struggle to learn due to the curl-free limitation.M oreover, we incorporate Strang splitting for both training and inference, instead of the standard ODE integration for improved computational efficiency. We evaluate our method on synthetic and real-world single-cell RNA-seq datasets, demonstrating its ability to model curved trajectories, multiple branching cell fates and fast computation in high-dimensional dataset.},
+  abstract={The connection between optimal transport (OT) and control theory is well established, most prominently in the Benamou–Brenier dynamic formulation. With quadratic cost, the OT problem can be reframed as a stochastic control problem in which a density evolves under a controlled velocity field subject to the continuity equation. In this work, we introduce a velocity prior into the continuity equation and derive a new Hamilton–Jacobi–Bellman (HJB) formulation to learn dynamical probability flows. We further extend the approach to the unbalanced setting by adding a growth term, capturing mass variation processes common in scientific domains such as cell proliferation and differentiation. Importantly, our method requires training only a single neural network to model, without the need for a separate model for the growth term. Finally, by decomposing the velocity field, our approach is able to capture complex transport patterns that prior methods struggle to learn due to the curl-free limitation. Moreover, we incorporate Strang splitting for both training and inference, instead of the standard ODE integration for improved computational efficiency. We evaluate our method on synthetic and real-world single-cell RNA-seq datasets, demonstrating its ability to model curved trajectories, multiple branching cell fates and fast computation in high-dimensional dataset.},
   year={2025},
-  pdf={VP_HJF_ICML_2026.pdf},
+  pdf={icml2026.pdf},
   selected={true}
 }
   
